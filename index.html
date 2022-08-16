@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Encriptador de texto</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header__nav">
+      <img class="header__nav--logo" src="/images/logo.png" alt="logo">
+    </nav>
+  </header>
+  <section class="input">
+    <!-- <input type="text" value="Ingrese el texto aqui"> -->
+    <div class="input__wrapper-text">
+
+      <textarea class="input__text-area" placeholder="Ingrese el texto aqui" name="texto-a-encriptar"></textarea>
+    </div>
+
+    <div class="input__footer">
+      <div class="input__msg-alert">
+        <img src="/images/alert.png" alt="alerta">
+        <p>Solo letras minúsculas y sin acentos</p>
+      </div>
+      <div class="input__buttons">
+        <button class="input__button--encr">Encriptar</button>
+        <button class="input__button--desencr">Desencriptar</button>
+      </div>
+    </div>
+  </section>
+  <section class="output">
+    <div class="output__card">
+      <p class="output__card--title">Ningún mensaje fue encontrado</p>
+      <p class="output__card--msg">Ingresa el texto que desees encriptar o desencriptar.</p>
+    </div>
+  </section>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
