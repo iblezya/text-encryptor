@@ -34,9 +34,13 @@
   color: #0a3871;
 }
 
+.input__footer {
+  padding: 0 16px;
+}
+
 .input__msg-alert {
   display: flex;
-  padding: 16px;
+  padding: 16px 0;
   font-size: 12px;
   line-height: 150%;
   color: #495057;
@@ -51,7 +55,6 @@
 .input__buttons {
   display: flex;
   flex-direction: column;
-  padding: 0 16px;
   gap: 24px;
 }
 
@@ -78,7 +81,7 @@
 .output {
   display: flex;
   flex-direction: column;
-  padding: 64px 24px 40px 16px;
+  padding: 64px 16px 40px 16px;
 }
 
 .output__card {
@@ -104,4 +107,38 @@
   font-size: 16px;
   line-height: 150%;
   padding: 16px 0 0 0;
+}
+
+@media screen and (min-width: 48em) {
+  .header__nav--logo {
+    padding: 75px 0 0 40px;
+  }
+
+  .input__wrapper-text {
+    padding: 120px 40px 0px 40px;
+  }
+
+  .input__buttons {
+    flex-direction: row;
+  }
+
+  .input__footer {
+    padding: 0 40px;
+  }
+
+  .input__button--encr {
+    flex-grow: 1;
+  }
+
+  .input__button--desencr {
+    flex-grow: 1;
+  }
+
+  .input__text-area {
+    height: 550px;
+  }
+
+  .output {
+    padding: 64px 40px 40px 40px;
+  }
 }

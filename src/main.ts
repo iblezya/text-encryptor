@@ -8,8 +8,10 @@ myTextArea?.addEventListener("keyup", (e) => {
 
 myTextArea?.addEventListener("click", (e) => {
   let count = (e.target as HTMLInputElement).value.length;
-  if (count < 30) {
+  if (count < 30 && window.innerWidth < 768) {
     myTextArea.style.height = `250px`;
+  } else if (count < 50 && window.innerHeight < 1440) {
+    myTextArea.style.height = `550px`;
   }
 });
 
