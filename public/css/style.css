@@ -16,10 +16,18 @@
 .header__nav--logo {
   padding: 24px 0 0 16px;
 }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  padding: 0 16px;
+}
 
 .input__wrapper-text {
   display: flex;
-  padding: 80px 16px 0px 16px;
+  padding: 80px 0px 0px 0px;
 }
 
 .input__text-area {
@@ -32,10 +40,6 @@
   font-size: 32px;
   line-height: 150%;
   color: #0a3871;
-}
-
-.input__footer {
-  padding: 0 16px;
 }
 
 .input__msg-alert {
@@ -85,6 +89,7 @@
 }
 
 .output__card {
+  height: 100%;
   background: #ffffff;
   box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
   border-radius: 32px;
@@ -94,11 +99,17 @@
   color: #343a40;
 }
 
+.output__card--image {
+  background: #ffffff;
+  display: none;
+}
+
 .output__card--title {
   background: #ffffff;
   font-weight: 700;
   font-size: 24px;
   line-height: 120%;
+  padding: 0 15px;
 }
 
 .output__card--msg {
@@ -110,20 +121,24 @@
 }
 
 @media screen and (min-width: 48em) {
+  .header__nav {
+    height: 123px;
+  }
+
   .header__nav--logo {
     padding: 75px 0 0 40px;
   }
 
+  .input {
+    padding: 0 40px;
+  }
+
   .input__wrapper-text {
-    padding: 120px 40px 0px 40px;
+    padding: 120px 0px 0px 0px;
   }
 
   .input__buttons {
     flex-direction: row;
-  }
-
-  .input__footer {
-    padding: 0 40px;
   }
 
   .input__button--encr {
@@ -140,5 +155,61 @@
 
   .output {
     padding: 64px 40px 40px 40px;
+  }
+}
+
+@media screen and (min-width: 90em) {
+  .header__nav {
+    height: 88px;
+  }
+  .header__nav--logo {
+    padding: 40px 0 0 84px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .input__wrapper-text {
+    padding: 80px 0px 0px 0px;
+  }
+  .input {
+    flex-grow: 5;
+    padding: 0 0 0 240px;
+  }
+  .input__footer {
+    padding-bottom: 72px;
+  }
+  .input__buttons {
+    flex-direction: row;
+  }
+
+  .input__button--encr {
+    flex-grow: 1;
+  }
+
+  .input__button--desencr {
+    flex-grow: 1;
+  }
+
+  .input__text-area {
+    height: 650px;
+  }
+
+  .output {
+    padding: 0px 40px 40px 80px;
+    flex-grow: 2;
+    width: 400px;
+  }
+  .output__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .output__card--image {
+    display: block;
   }
 }

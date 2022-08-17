@@ -16,30 +16,33 @@
       <img class="header__nav--logo" src="/images/logo.png" alt="logo">
     </nav>
   </header>
-  <section class="input">
-    <!-- <input type="text" value="Ingrese el texto aqui"> -->
-    <div class="input__wrapper-text">
+  <div class="wrapper">
+    <section class="input">
+      <!-- <input type="text" value="Ingrese el texto aqui"> -->
+      <div class="input__wrapper-text">
 
-      <textarea class="input__text-area" placeholder="Ingrese el texto aqui" name="texto-a-encriptar"></textarea>
-    </div>
+        <textarea class="input__text-area" placeholder="Ingrese el texto aqui" name="texto-a-encriptar"></textarea>
+      </div>
 
-    <div class="input__footer">
-      <div class="input__msg-alert">
-        <img src="/images/alert.png" alt="alerta">
-        <p>Solo letras minúsculas y sin acentos</p>
+      <div class="input__footer">
+        <div class="input__msg-alert">
+          <img src="/images/alert.png" alt="alerta">
+          <p>Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="input__buttons">
+          <button class="input__button--encr">Encriptar</button>
+          <button class="input__button--desencr">Desencriptar</button>
+        </div>
       </div>
-      <div class="input__buttons">
-        <button class="input__button--encr">Encriptar</button>
-        <button class="input__button--desencr">Desencriptar</button>
+    </section>
+    <section class="output">
+      <div class="output__card">
+        <img class="output__card--image" src="/images/munheco.svg" alt="munheco">
+        <p class="output__card--title">Ningún mensaje fue encontrado</p>
+        <p class="output__card--msg">Ingresa el texto que desees encriptar o desencriptar.</p>
       </div>
-    </div>
-  </section>
-  <section class="output">
-    <div class="output__card">
-      <p class="output__card--title">Ningún mensaje fue encontrado</p>
-      <p class="output__card--msg">Ingresa el texto que desees encriptar o desencriptar.</p>
-    </div>
-  </section>
+    </section>
+  </div>
   <script type="module" src="/src/main.ts"></script>
 </body>
 
